@@ -1,0 +1,41 @@
+---
+import Accessories from "../components/Accessories.astro";
+import HeroSecciton from "../components/HeroSecciton.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import Models from "../components/Models.astro";
+import ModelTheree from "../components/ModelTheree.astro";
+import ModelX from "../components/ModelX.astro";
+import ModelY from "../components/ModelY.astro";
+import PowerWall from "../components/PowerWall.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Tesla Colombia">
+  <LandingHeader />
+
+  <main
+    class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
+  >
+    <div class="snap-center">
+      <HeroSecciton />
+    </div>
+    <div class="snap-center">
+      <ModelY />
+    </div>
+    <div class="snap-center">
+      <ModelTheree />
+    </div>
+    <div class="snap-center">
+      <Models />
+    </div>
+    <div class="snap-center">
+      <ModelX />
+    </div>
+    <div class="snap-center">
+      <PowerWall />
+    </div>
+    <div class="snap-center">
+      <Accessories />
+    </div>
+  </main>
+</Layout>
